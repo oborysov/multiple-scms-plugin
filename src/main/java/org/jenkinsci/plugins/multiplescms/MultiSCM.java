@@ -46,7 +46,7 @@ public class MultiSCM extends SCM implements Saveable {
 	
 	@Exported
 	public List<SCM> getConfiguredSCMs() {
-		//return scms.toList();
+		return scms.toList();
 	}
 	
     @Override
