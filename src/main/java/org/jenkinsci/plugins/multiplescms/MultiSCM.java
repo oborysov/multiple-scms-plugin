@@ -46,7 +46,7 @@ public class MultiSCM extends SCM implements Saveable {
 	
 	@Exported
 	public List<SCM> getConfiguredSCMs() {
-		//return scms.toList();
+		return scms.toList();
 	}
 	
     @Override
@@ -152,7 +152,7 @@ public class MultiSCM extends SCM implements Saveable {
 	
 	@Override
 	public ChangeLogParser createChangeLogParser() {
-		return new MultiSCMChangeLogParser(scms.toList());
+		//return new MultiSCMChangeLogParser(scms.toList());
 	}
 
 	public void save() throws IOException {
