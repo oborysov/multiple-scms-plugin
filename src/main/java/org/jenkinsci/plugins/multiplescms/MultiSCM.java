@@ -41,7 +41,7 @@ public class MultiSCM extends SCM implements Saveable {
     
 	@DataBoundConstructor
     public MultiSCM(List<SCM> scmList) throws IOException {
-		//scms.addAll(scmList);
+		scms.addAll(scmList);
     }
 	
 	@Exported
@@ -93,7 +93,7 @@ public class MultiSCM extends SCM implements Saveable {
 			if(scmResult.change.compareTo(overallChange) > 0)
 				overallChange = scmResult.change;
 		}
-		return new PollingResult(baselineStates, currentStates, overallChange);
+		//return new PollingResult(baselineStates, currentStates, overallChange);
 	}
 	
 	@Override
