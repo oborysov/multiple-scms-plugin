@@ -41,12 +41,12 @@ public class MultiSCM extends SCM implements Saveable {
     
 	@DataBoundConstructor
     public MultiSCM(List<SCM> scmList) throws IOException {
-		scms.addAll(scmList);
+		//scms.addAll(scmList);
     }
 	
 	@Exported
 	public List<SCM> getConfiguredSCMs() {
-		//return scms.toList();
+		return scms.toList();
 	}
 	
     @Override
