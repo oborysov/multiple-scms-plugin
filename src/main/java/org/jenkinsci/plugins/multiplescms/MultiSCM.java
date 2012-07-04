@@ -198,7 +198,7 @@ public class MultiSCM extends SCM implements Saveable {
 		@Override
 		public SCM newInstance(StaplerRequest req, JSONObject formData)
 				throws FormException {
-			//return super.newInstance(req, formData);
+			return super.newInstance(req, formData);
 		}
 	    
 	}
