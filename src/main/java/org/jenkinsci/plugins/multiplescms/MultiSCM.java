@@ -186,7 +186,6 @@ public class MultiSCM extends SCM implements Saveable {
 	     * This human readable name is used in the configuration screen.
 	     */
 	    public String getDisplayName() {
-	        return "Multiple SCMs";
 	    }
 	
 	    @Override
