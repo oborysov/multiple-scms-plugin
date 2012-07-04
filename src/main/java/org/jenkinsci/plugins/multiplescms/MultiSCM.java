@@ -192,7 +192,7 @@ public class MultiSCM extends SCM implements Saveable {
 	    @Override
 	    public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
 	        save();
-	        return super.configure(req,formData);
+	        //return super.configure(req,formData);
 	    }
 
 		@Override
