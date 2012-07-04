@@ -93,7 +93,7 @@ public class MultiSCM extends SCM implements Saveable {
 			if(scmResult.change.compareTo(overallChange) > 0)
 				overallChange = scmResult.change;
 		}
-		//return new PollingResult(baselineStates, currentStates, overallChange);
+		return new PollingResult(baselineStates, currentStates, overallChange);
 	}
 	
 	@Override
@@ -198,7 +198,7 @@ public class MultiSCM extends SCM implements Saveable {
 		@Override
 		public SCM newInstance(StaplerRequest req, JSONObject formData)
 				throws FormException {
-			return super.newInstance(req, formData);
+			//return super.newInstance(req, formData);
 		}
 	    
 	}
